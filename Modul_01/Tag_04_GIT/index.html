@@ -10,22 +10,30 @@
     <main>
         <h1>Git Cheatsheet</h1>
 
-        <p>
-            Ich hasse Git jetzt schon 😭
-        </p>
+        <h2>Damit man nicht wahnsinnig wird mit git, sollte man....</h2>
 
-        <section>
+        <section class="repro_1">
             <article>
-                <p>blah blah</p>
+                <p>Erst mal ein Repository erstellen</p>
             </article>
 
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <ol>
+                <li>Repository in Github erstellen & bennen</li>
+                <ul>
+                    <li> (den Link zum Repo schon mal kopieren) </li>
+                </ul>
+                <li>Ordner für Projekt in VS Code öffnen</li>
+                <li>mit Command + J das Terminal öffnen und Befehle eingeben:</li>
+                <ul>
+                    <li>git init</li>
+                    <li>git add . </li>
+                    <li>git commit -m "hier Kommentar zum Projekt eingeben"</li>
+                    <li>git branch -m main</li>
+                    <li>git remote add origin "hier den zuvor kopierten Link einfügen"</li>
+                    <li>git push -u origin main</li>
+                </ul>
+                <li>Freuen, dass sich das neue Projekt mit dem hoffentlich richtigen Ordner verküpft hat!</li>
+            </ol>
         </section>
     </main>
 </body>
