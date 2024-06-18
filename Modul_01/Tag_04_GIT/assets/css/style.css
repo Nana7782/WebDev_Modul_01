@@ -18,7 +18,18 @@ h2::after{
 }
 
 .repro_1{
+    float: left;
     width: 550px;
+    border: 2px dotted limegreen;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 100px;
+    font-size: 16px;
+}
+
+.repro_2{
+    float: right;
+    width: 600px;
     border: 2px dotted limegreen;
     border-radius: 10px;
     padding: 0 10px;
