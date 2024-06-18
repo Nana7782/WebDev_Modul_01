@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.card {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.card__header {
+    color: blue;
+}
+
+.card__body {
+    margin: 10px o;
+}
+
+.card__text{
+    padding: 10px 0;
+}
+
+.card__text--color {
+    color: crimson;
+}
+.card__footer--highlight {
+    background-color: lime;
+}
+
+.p-bgPurple{
+    background-color: purple;
+    color: white;
+    padding: 10px 0;
+}
+
+.p-font-size{
+    font-size: 20px;
+}
+
+/*  ****** BEM ******* */
+
+section li::before{
+    content: "😀";
+}
+
+section li::after{
+    content: "😍";
+}
+
+
+
+h1::first-letter{
+    font: 70px;
+    color: red;
+}
+
+section>p::first-line{
+    font-size: 20px;
+    color: blue;
+}
+
+section>p::selection{
+    color: blue;
+    background-color: lime;
+}
+
+button{
+    display: block;
+    width: 100px;
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+button:hover + div img{
+    display: block;
+}
+.show__img{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.show__img img{
+    width: 100%;
+    display: none;
+}
+
+.gallery__img{
+    background-image: url(../img/photo-1506953823976-52e1fdc0149a.avif);
+    height: 300px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 30px 20px;
+    display: inline-block;
+}
+
+#section__one, #section__two, #section__tree{
+    height: 100vh;
+}
+
+#section__one{
+    background-color: purple;
+}

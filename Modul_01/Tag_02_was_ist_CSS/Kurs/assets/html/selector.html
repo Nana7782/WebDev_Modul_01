@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektoren</title>
+
+    <style>
+        header {
+            text-align: center;
+            color: blueviolet;
+            background: darkgray;
+        }
+
+        /* Nachfahre-Selektor*/
+        header h1,
+        header p {color: aliceblue;}
+
+        h3, a {
+            color: chocolate;
+        }
+        /* Indirekter Nachbar ODER Geschwisterselektor */
+        h4~p {color: darkblue;}
+
+        /* Kind > Selektor*/
+        section>p {
+            background: chartreuse;
+        }
+        /* Direkter Selektor + */
+        h5+p {
+            font-weight: bold;
+        }
+
+    section>article>p{
+        background-color: brown;
+    }
+    </style>
+</head>
+<body>
+    <header> <!-- Nachfahre-Selektor -->
+        <h1>Selektoren</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quaerat in et fugiat distinctio provident.</p>
+    </header>
+    
+    <div>
+        <h3>Gruppierte Selektoren - getrennt durch ein ","</h3>
+        <a href="#">Self HTML</a>
+        <a href="#">Mediaevent</a>
+    </div>
+
+    <div>
+        <h4>Indirekter Nachbar ~ Selektor</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, cum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tempore!</p>
+    </div>
+
+    <section>
+        <h5>Kind > Selektor</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, reiciendis!</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, fugit!</p>
+        </article>
+    </section>
+
+    <div>
+        <h5>Direkter Nachbar + Selektor</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, veniam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, soluta?</p>
+    </div>
+</body>
+</html>
