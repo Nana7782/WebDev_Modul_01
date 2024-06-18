@@ -10,8 +10,9 @@
     <main>
         <h1>Git Cheatsheet</h1>
 
-        <h2>Damit man nicht wahnsinnig wird mit git, sollte man....</h2>
+        <h2>Git und ich werden Freunde, Git und ich werden Freunde, Git und ich werden Freunde... vielleicht</h2>
 
+        <section id="container">
         <div class="repro_1">
                 <p>Erst mal ein Repository erstellen</p>
 
@@ -41,14 +42,44 @@
                     <ol>
                         <li>git status  <-- spuckt die Dateien/Ordner aus die geändert wurden u. man kann im nächsten Schritt einfach den Namen kopieren</li>
                         <li>git add "file" <-- für jede Datei einmal eingeben</li>
-                        <li></li>
+                        <li>git commit -m "neuer Kommentar zb Aktualisierung etc."</li>
+                        <li>push -u origin main  <-- Veröffentlicht den ganzen Kladderadatsch</li>
                     </ol>
                 <li></li>
-                <li></li>
+                <li>Bestimmt fehlt noch was, das ergänzt werden muss</li>
                 <li></li>
                 <li></li>
             </ul>
         </div>
+    </section>
+        <section>
+            <article>
+                <h3>Ein Projekt klonen</h3>
+
+                <ol>
+                    <li>Einen lokalen Ordner für das Projekt erstellen</li>
+                    <li>Ordner in VS Code öffnen</li>
+                    <li>GitHub -> Repo -> Link kopieren</li>
+                    <li>Terminal in VS Code öffnen mit command + J</li>
+                        <ul>
+                            <li>git clone "link" . <-- Leerzeichen+. erzeugt keinen Unterordner</li>
+                        </ul>
+                        <li>Fertig!</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>Ein geklontes Projekt aktualisieren</h3>
+
+                <ol>
+                    <li>Terminal in VS Code öffnen mit command + J</li>
+                        <ul>
+                            <li>git pull origin main</li>
+                        </ul>
+                        <li>Fertig!</li>
+                </ol>
+            </article>
+        </section>
     </main>
 </body>
 </html>
